@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV Riccardo Mancinelli</title>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="#anagrafica">Anagrafica</a></li>
+                <li><a href="#studi">Studi</a></li>
+                <li><a href="#esperienze">Esperienze</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1>CV Riccardo Mancinelli</h1>
+            <img src="img/cv.png" alt="immagine-cv">
+            <section id="anagrafica">    
+                <h2>Dati Anagrafici</h2>
+                <p>Nome : <strong>Riccardo</strong></p>
+                <p>Cognome : <strong>Mancinelli</strong></p>
+                <p>Data di nascita : <strong>13/10/1998</strong></p>
+                <p>Residenza : <strong>via Puccini 44, Corridonia (MC)</strong></p>
+                <p>Domicilio : <strong>via Parma 63, Poviglio (RE)</strong></p>
+            </section>
+            <section id="studi">
+                <h2>Studi Accademici</h2>
+                <h3>Studi universitari</h3>
+                <ul>
+                    <li>
+                        <h4>Università degli studi di Modena e Reggio Emilia</h4>
+                        <p>Corso di laurea magistrale in <em>Ingegneria Meccatronica</em></p>
+                        <p>2020 - 2022</p>
+                        <p>110 / 110 cum Laude</p>
+                    </li>
+                    <li>
+                        <h4>Università degli studi di Modena e Reggio Emilia</h4>
+                        <p>Corso di laurea triennale in <em>Ingegneria Meccatronica</em></p>
+                        <p>2017 - 2020</p>
+                        <p>110 / 110 cum Laude</p>
+                    </li>
+                </ul>
+                <h3>Studi tecnici</h3>
+                <ul>
+                    <li>
+                        <h4>Istituto tecnico industriale Montani</h4>
+                        <p>Diploma di perito tecnico in <em>Meccanica e Meccatronica</em></p>
+                        <p>2012 - 2017</p>
+                        <p>100 / 100</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="esperienze">
+                <h2>Esperienze Lavorative</h2>
+                <ul>
+                    <li>
+                        <h3>Zapi group spa - Test Engineer</h3>
+                        <h4>10/2022 - attuale</h4>
+                        <p>sviluppo strumenti di test (basati su <em>sistemi embedded</em>),
+                           esecuzione e monitoraggio delle prove e scrittura documentazione tecnica</p>
+                    </li>
+                    <li>
+                        <h3>K-Loops srl - Software Engineer</h3>
+                        <h4>12/2021 - 08/2022</h4>
+                        <p>sviluppo di una libreria di <em>computer vision</em> per 
+                           la movimentazione di robot industriali a 6 assi</p>
+                    </li>
+                    <li>
+                        <h3>Elettro Software srl - PLC Software Engineer</h3>
+                        <h4>10/2021 - attuale</h4>
+                        <p>sviluppo del <em>software</em> di controllo di una <em>macchina automatica</em> 
+                           per la produzione di piastrelle nel settore ceramico</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="progetti">
+                <h2>Progetti</h2>
+                <ul>
+                    <li>
+                        <h3>Controllo banco test durata HW - Zapi spa</h3>
+                        <h4>Strumenti utilizzati : </h4>
+                        <ul>
+                            <li>microcontrollore Microchip - PIC32MX</li>
+                            <li>programmazione in C</li>
+                            <li>scheda demo PIC32-MAXI-WEB</li>
+                            <li>MPLABXIde</li>
+                            <li>CANAnalyzer Ixxat</li>
+                            <li>FreeRTOS</li>
+                        </ul>
+                        <h4>Descrizione : </h4>
+                        <article>
+                            Il progetto sviluppato effettua un pilotaggio del dispositivo sotto test e un controllo sulle
+                            variabili d'ambiente in cui la prova è eseguita.<br>
+                            Nel caso in cui venga rilevata un'anomalia di funzionamento il controllo porta il test in condizioni
+                            di sicurezza fino all'intervento dell'operatore.<br>
+                            Il controllo è stato prodotto scrivendo il codice in <em>C embedded</em> per una scheda demo con a bordo un 
+                            <em>microcontrollore Microchip</em> parallelizzando i processi utilizzando lo scheduler messo a disposizione 
+                            dalla libreria <em>FreeRTOS</em>
+                        </article>
+                    </li>
+                    <li>
+                        <h3>Sviluppo HW/SW banco HIL per test SW - Zapi spa</h3>
+                        <h4>Strumenti utilizzati : </h4>
+                        <ul>
+                            <li>Raspberry</li>
+                            <li>programmazione in Python</li>
+                            <li>Periferiche in I2C, SPI, CAN</li>
+                            <li>CANAnalyzer Ixxat</li>
+                            <li>librerie threading e multiprocessing</li>
+                            <li>programmazione ad oggetti</li>
+                        </ul>
+                        <h4>Descrizione : </h4>
+                        <article>
+                            Il progetto sviluppato genera le condizioni di allarme in modo elettrico sollecitando esternamente
+                            il componente su cui è installato il SW sotto test.<br>
+                            Per eseguire queste prove è stato sviluppato un codice in <em>Python</em> orientato agli oggetti e per 
+                            ottimizzare le prestazioni si sono utilizzate le librerie <em>theading</em> e <em>multiprocessing</em> così 
+                            da ottenere un tempo di risposta del sistema testante molto più piccolo rispetto al sistema testato.
+                        </article>
+                    </li>
+                    <li>
+                        <h3>Sviluppo libreria Computer Vision - K-loops srl</h3>
+                        <h4>Strumenti utilizzati : </h4>
+                        <ul>
+                            <li>Robot 6 assi industriale KUKA</li>
+                            <li>programmazione in KRL</li>
+                            <li>programmazione in Python</li>
+                            <li>IntelRealSense depth camera</li>
+                            <li>OpenCV e Open3D</li>
+                        </ul>
+                        <h4>Descrizione : </h4>
+                        <article>
+                            Il progetto riguarda la movimentazione robot mediante l'acquisizione di punti nello spazio tramite una <em>Depth Camera</em>.<br>
+                            Utilizzando le librerie <em>Open3D</em> e <em>OpenCV</em> si va a cercare nello spazio una nuvola di punti compatibile con un oggetto noto.<br>
+                            Successivamente si calcola tramite matrici la distanza e l'orientamento dell'oggetto e si pilota il robot con il linguaggio <em>KRL</em> per 
+                            afferrare l'oggetto.
+                        </article>
+                    </li>
+                    <li>
+                        <h3>Sviluppo SW controllo macchina automatica - ElettroSoftware srl</h3>
+                        <h4>Strumenti utilizzati : </h4>
+                        <ul>
+                            <li>PLC testo strutturato</li>
+                            <li>Automation Studio B&R</li>
+                        </ul>
+                        <h4>Descrizione : </h4>
+                        <article>
+                            Tramite i componenti e il software offerti da B&R (<em>AutomationStudio</em>) si è sviluppato il codice di controllo 
+                            di una macchina spalmatriche che regola l'apertura di due lame per aumentare o ridurre la caduta di smalto sulle 
+                            piastrelle.
+                        </article>
+                    </li>
+                    <li>
+                        <h3>Sviluppo codice domotica - Università</h3>
+                        <h4>Strumenti utilizzati : </h4>
+                        <ul>
+                            <li>microcontrollore STM32</li>
+                            <li>programmazione in C</li>
+                            <li>periferiche I2C, SPI, I2S, Bluetooth</li>
+                        </ul>
+                        <h4>Descrizione : </h4>
+                        <article>
+                            Il progetto sviluppato effettua il controllo e il pilotaggio di alcune periferiche per il funzionamento di 
+                            impianti di domotica.<br>
+                            In particolare è stato scritto un codice in <em>C embedded</em> su piattaforma <em>STM32</em> per : <br>
+                            <ul>
+                                <li>Controllo altezza serrande in base alla luminosità</li>
+                                <li>Controllo remoto del livello di luminosità</li>
+                                <li>Controllo remoto del condizionamento ambientale</li>
+                                <li>Servizio webmail con messaggio vocale in caso di non risposta al campanello</li>
+                                <li>Applicazione per Smartphone per la scelta da parte dell'utente dei parametri di configurazione</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <section id="blog">
+                <h2>News !</h2>
+                <h3>Sono molto felice di annunciare che : </h3>
+                <ul>
+                    <li>
+                        <p>ho intrapreso una collaborazione con <strong>Accademia CODE</strong>
+                            <a href="https://accademiacode.com/corso-google/?wpf870_28=Search&gad_source=1&gclid=Cj0KCQjwn9y1BhC2ARIsAG5IY-7h6vNGR3VZgAHws0CgeC_VZF2mbGBPTQXRHN5ksD5dgfd0gLrUgDoaAqizEALw_wcB">
+                                (<em>vai al sito</em>)</a> per acquisire competenze nel <em>Full-Stack Development</em></p>
+                    </li>
+                    <li>
+                        <p>ho iniziato, insieme ad altri 3 collaboratori un progetto nel settore <em>testing</em> che porterà alla formazione
+                            di una <strong>nuova azienda</strong>, se sei interessato puoi rimanere aggiornato guardando le ultime notizie su <a href="https://www.cherrybytes.it/"><strong>cherrybytes.it</strong></a>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <section id="contatti">
+                <h2>Contatti</h2>
+                <p>Telefono : <a href="tel:+393491011109"><strong>3491011109</strong></a> (<em>Italy</em>)</p>
+                <p>E-mail aziendale : <a href="mailto:riccardo.mancinelli@cherrybytes.it"><strong>riccardo.mancinelli@cherrybytes.it</strong></a></p>
+                <p>E-mail personale : <a href="mailto:ric.man@virgilio.it"><strong>ric.man@virgilio.it</strong></a></p>
+            </section>
+        </footer>
+    </body>
+</html>
